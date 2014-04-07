@@ -16,4 +16,4 @@ And then ad following code in your file
             });
 </script>
 See `admore.js` for additional parameters you can include when initializing the EnableAddMore
-</pre></body></html>
+</pre>
