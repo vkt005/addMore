@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+        <title>Add More jQuery plugin-vivek kumar tripathi</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/admore.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function () {
+                $(".mulit-field-demo").EnableAddMore({linkText: 'add more'});
+            });
+        </script>
+        <style type="text/css">
+            .mulit-field-demo {border-bottom: 1px #ccc dotted;width: 500px;margin: 10px}
+            .mulit-field-demo label{ width:150px; display: block;font-weight: bold;}
+            .removeFields{float:right;height: 30px;line-height: 30px;font-size: 12px;border-radius: 5px;display:block;background: #ccc;width:100px;text-align: center;text-transform: uppercase;text-decoration: none;font-family: verdana;color:#000}
+            .removeFields:hover{background: red;color:#FFF}
+            .addMore{width: 100px;height: 35px;background: #ccc;display: block;text-align: center;line-height: 35px;font-size: 14px;text-transform: uppercase;color: #000;text-decoration: none;font-family: verdana;}
+            .addMore:hover{background: #000;color:#fff}
+        </style>
+    </head>
+    <body>
+        <div style="background:#f8f8f8;width: 560px">
+            <form name="form1" action="" method="post">
+                <fieldset>
+                    <input type="hidden"  name="counter" id="count" value=""/> 
+                    <legend>Contact details</legend>
+                    <div class="mulit-field-demo">
+                        <div>
+                            <label for="txtName">Name</label>
+                            <input  name="name[]" value="" class="txtName" type="text" />
+                        </div>
+                        <div>
+                            <label for="txtAddress">
+                                Address</label>
+                            <textarea cols="30" rows="3" class="txtAddress"></textarea>
+                        </div>
+                        <div>  <input type="file" name="file[]" id="fileField" /></div>
+                        <div style="clear: both"></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>    
+    </body>
+</html>
